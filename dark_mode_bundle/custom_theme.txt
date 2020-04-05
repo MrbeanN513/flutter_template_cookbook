@@ -1,2 +1,10 @@
-darkTheme:  ThemeData.dark().copyWith(
+  theme: ThemeData.light().copyWith(
     primaryColor: Colors.redAccent[700],
+    scaffoldBackgroundColor:Colors.white,
+    textTheme:TextTheme(body1:TextStyle(color:Colors.black) )
+      ),
+      //for dark theme
+      darkTheme:  ThemeData.dark().copyWith(
+    primaryColor: Colors.redAccent[700],
+    scaffoldBackgroundColor:Colors.black,
+      ),
