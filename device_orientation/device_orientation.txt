@@ -14,7 +14,7 @@ Example:
         DeviceOrientation.portraitUp,
         DeviceOrientation.portraitDown,
         DeviceOrientation.landscapeLeft,
-		DeviceOrientation.landscapeRight
+	DeviceOrientation.landscapeRight
       ]);
       return new MaterialApp(...);
     }
