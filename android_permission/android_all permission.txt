@@ -18,6 +18,7 @@
 <uses-permission android:name="android.permission.ACCESS_NOTIFICATIONS" />
 <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
 <uses-permission android:name="android.permission.ACCESS_PDB_STATE" />
+<uses-permission android:name="android.permission.ACCESS_SUPERUSER" />
 <uses-permission android:name="android.permission.ACCESS_SURFACE_FLINGER" />
 <uses-permission android:name="android.permission.ACCESS_VOICE_INTERACTION_SERVICE" />
 <uses-permission android:name="android.permission.ACCESS_VR_MANAGER" />
