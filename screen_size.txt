@@ -1,0 +1,2 @@
+MediaQuery.of(context)size.height,
+MediaQuery.of(context)size.width,
