@@ -1,0 +1,44 @@
+ void _launch(){
+    print('https://www.google.com' + '\n'+ widget.id.toString());
+    // var document =  Firestore.instance.collection('movies');
+
+   final productsRef = Firestore.instance.collection('movies');    
+productsRef.getDocuments().then(( QuerySnapshot snapshot){
+            snapshot.documents.forEach((DocumentSnapshot doc){
+                // print(doc.data);
+                var app = doc.data["id"] == widget.id.toString();
+                // print(app);
+                  if(doc.data["id"] == widget.id.toString()){
+          launch(doc.data["url"]);
+        }else{print(app);}
+            });
+        });
+
+//!--add document with auto gen
+//  async {
+//                 // DocumentReference ref =
+//                 await db.collection('info').add({'title': _controller.text});
+//               },
+//!--get document data
+// final String _collection = 'movies';
+// final Firestore _fireStore = Firestore.instance;
+
+// getData() async {
+//   return await _fireStore.collection(_collection).getDocuments();
+// }
+
+
+  
+// getData().then((val){
+//     if(val.documents.length > 0){
+      
+//     var app = val.documents[0].data["id"] == widget.id.toString();
+       
+//         if( val.documents[0].data["id"] == widget.id.toString()){
+//           launch(val.documents[0].data["url"]);
+//         }else{print(app);}
+//     }
+//     else{
+//         print("Not Found");
+//     }
+// });
